@@ -53,7 +53,7 @@
     (kbd "C-k") 'vc-annotate-prev-revision
     "W" 'vc-annotate-working-revision
     "A" 'vc-annotate-toggle-annotation-visibility
-    (kbd "RET") 'vc-annotate-goto-line))
+    (kbd "RET") 'vc-annotate-show-log-revision-at-line))
 
 (provide 'evil-collection-vc-annotate)
 ;;; evil-collection-vc-annotate.el ends here

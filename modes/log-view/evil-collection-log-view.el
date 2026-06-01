@@ -46,7 +46,7 @@
     (kbd "TAB") 'log-view-toggle-entry-display
     "m" 'log-view-toggle-mark-entry
     "c" 'log-view-modify-change-comment
-    (kbd "RET") 'log-view-diff
+    (kbd "RET") 'log-view-toggle-entry-display
     "d" 'log-view-diff
     "=" 'log-view-diff
     "D" 'log-view-diff-changeset
