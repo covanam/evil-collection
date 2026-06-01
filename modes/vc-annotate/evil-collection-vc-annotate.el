@@ -48,7 +48,7 @@
     "W" 'vc-annotate-working-revision
     "A" 'vc-annotate-toggle-annotation-visibility)
   (evil-collection-bind 'vc-annotate-mode-map
-                        'action 'vc-annotate-goto-line
+                        'action 'vc-annotate-show-log-revision-at-line
                         'next-item 'vc-annotate-next-revision
                         'prev-item 'vc-annotate-prev-revision
                         'next-section 'vc-annotate-next-revision

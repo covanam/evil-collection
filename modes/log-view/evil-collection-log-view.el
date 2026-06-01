@@ -53,7 +53,7 @@
     "F" 'log-view-find-revision)
   (evil-collection-bind 'log-view-mode-map
                         'mark 'log-view-toggle-mark-entry
-                        'action 'log-view-diff
+                        'action 'log-view-toggle-entry-display
                         'next-item 'log-view-msg-next
                         'prev-item 'log-view-msg-prev
                         'next-section 'log-view-msg-next
