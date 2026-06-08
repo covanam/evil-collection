@@ -35,7 +35,7 @@
 ;;;###autoload
 (defun evil-collection-message-setup ()
   "Set up `evil' bindings for `message-mode'."
-  (evil-set-initial-state 'message-mode 'insert)
+  (evil-set-initial-state 'message-mode 'normal)
   (evil-collection-define-key 'normal 'message-mode-map
     "ZZ" 'message-send-and-exit
     "ZQ" 'message-kill-buffer
