@@ -183,6 +183,8 @@ binding keys to a minor mode created by `evil-collection' instead."
     "A" 'diff-add-change-log-entries-other-window
 
     "a" 'diff-apply-hunk
+    "r" 'diff-hunk-revert
+    "R" 'diff-hunk-revert-and-kill
     "*" 'diff-refine-hunk
     "D" 'diff-file-kill
     "d" 'diff-hunk-kill
@@ -204,7 +206,7 @@ binding keys to a minor mode created by `evil-collection' instead."
   "Set up `evil' bindings for `diff-mode'."
   ;; Don't switch to read-only/motion state by default as this can interfere
   ;; with other modes which require a writable buffer, e.g. magit.
-  (evil-set-initial-state 'diff-mode 'normal)
+  (evil-set-initial-state 'diff-mode 'motion)
 
   (if evil-collection-diff-mode-want-minor-mode
       (evil-collection-diff-mode-setup-on-minor-mode)
